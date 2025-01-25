@@ -1,10 +1,9 @@
 ## TO RUN ON GOOGLE COLAB
-# !pip install -q python-telegram-bot
+!pip install -q python-telegram-bot
 from telegram import Update
 import requests
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
-
-# from google.colab import userdata
+from google.colab import userdata
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
