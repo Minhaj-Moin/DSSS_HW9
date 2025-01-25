@@ -1,10 +1,11 @@
 ## TO RUN ON GOOGLE COLAB
-!pip install -q python-telegram-bot
+#!pip install -q python-telegram-bot
 from telegram import Update
 import requests
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
-from google.colab import userdata
-
+#from google.colab import userdata
+import os
+print(os.environ['TELEGRAM_API_KEY'])
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Hi! MinhajBot here, how can I help you?")
