@@ -40,3 +40,6 @@ jobs:
     - name: Run Server
       run: |
         python main.py 
+      env:
+        TELEGRAM_API_KEY: ${{ secrets.TELEGRAM_API_KEY }} 
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} 
